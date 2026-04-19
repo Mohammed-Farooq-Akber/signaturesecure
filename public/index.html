@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Secure USA | Austin's Premier Apostille & Document Services</title>
+    <meta name="description" content="Austin's premier partner for expedited document authentication, hand-carry apostille, mobile ink-rolled fingerprinting, and FBI background checks. Serving all major Texas metros.">
+    <link rel="icon" type="image/jpeg" href="/images/partner.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <!-- PARTICLE CANVAS -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="nav-brand">
+                <img src="/images/partner.jpg" alt="Signature Secure USA" class="nav-logo-img">
+                <div class="nav-brand-text">
+                    <span class="nav-brand-name">Signature Secure USA</span>
+                    <span class="nav-brand-tagline">Secure · Certified · Expedited</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#intake" class="nav-cta">Free Pre-Audit</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-radial"></div>
+
+        <!-- Floating orbs -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <div class="container hero-layout">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    <span>Austin's Premier Document Authority</span>
+                    <span class="eyebrow-dot"></span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line" data-text="Fast &amp; Secure">Fast &amp; Secure</span>
+                    <span class="title-gold glitch" data-text="Apostille Services">Apostille Services</span>
+                    <span class="title-line" data-text="in Austin, Texas">in Austin, Texas</span>
+                </h1>
+                <p class="hero-sub">
+                    Professional <strong>Hand-Carry Authentication</strong> at the Texas Secretary of State &amp; Federal FBI Background Checks. We navigate the red tape so <em>you don't have to.</em>
+                </p>
+                <div class="hero-btns">
+                    <a href="#intake" class="btn btn-gold magnetic">
+                        <span class="btn-bg"></span>
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Get Free Pre-Audit</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                    <a href="#services" class="btn btn-ghost magnetic">
+                        <i class="fas fa-list-check"></i>
+                        <span>Our Services</span>
+                    </a>
+                </div>
+                <div class="hero-trust-bar">
+                    <div class="trust-item"><i class="fas fa-check-circle"></i><span>Same-Day Rush</span></div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item"><i class="fas fa-check-circle"></i><span>NNA Certified</span></div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item"><i class="fas fa-check-circle"></i><span>TX Commissioned Notary</span></div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item"><i class="fas fa-check-circle"></i><span>Free Pre-Audit</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="seal-stage">
+                    <div class="seal-halo seal-halo-1"></div>
+                    <div class="seal-halo seal-halo-2"></div>
+                    <div class="seal-halo seal-halo-3"></div>
+                    <div class="seal-wrapper">
+                        <img src="/images/partner.jpg" alt="Signature Secure USA Premier Partner" class="hero-seal-img stamp-entrance" id="heroSeal">
+                        <div class="seal-reflection"></div>
+                    </div>
+                    <!-- Orbiting cities -->
+                    <div class="orbit-ring">
+                        <div class="orbit-city" style="--deg:0deg"><span>Austin</span></div>
+                        <div class="orbit-city" style="--deg:60deg"><span>Houston</span></div>
+                        <div class="orbit-city" style="--deg:120deg"><span>Dallas</span></div>
+                        <div class="orbit-city" style="--deg:180deg"><span>San Antonio</span></div>
+                        <div class="orbit-city" style="--deg:240deg"><span>El Paso</span></div>
+                        <div class="orbit-city" style="--deg:300deg"><span>Waco</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===== CITIES MARQUEE ===== -->
+    <div class="marquee-bar">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="marquee-item"><i class="fas fa-star"></i> Austin</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Houston</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Dallas</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> San Antonio</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> El Paso</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Waco</span>
+                <span class="marquee-item"><i class="fas fa-certificate"></i> NNA Certified</span>
+                <span class="marquee-item"><i class="fas fa-certificate"></i> TX Commissioned Notary</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Same-Day Hand-Carry</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> FBI Authentication</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Austin</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Houston</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Dallas</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> San Antonio</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> El Paso</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Waco</span>
+                <span class="marquee-item"><i class="fas fa-certificate"></i> NNA Certified</span>
+                <span class="marquee-item"><i class="fas fa-certificate"></i> TX Commissioned Notary</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> Same-Day Hand-Carry</span>
+                <span class="marquee-item"><i class="fas fa-star"></i> FBI Authentication</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section id="why-us" class="section why-section">
+        <div class="section-bg-texture"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-eyebrow">Why Choose Us</p>
+                <h2 class="section-title">The Signature Secure <em>Advantage</em></h2>
+                <p class="section-sub">We're not just a document service — we're your boots-on-the-ground expert at the Texas Secretary of State.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-num">01</div>
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-bolt"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+                    <h3>Same-Day Hand-Carry</h3>
+                    <p>We physically hand-carry your documents to the Secretary of State daily. Same-day and 24-hour turnarounds for urgent matters.</p>
+                    <div class="card-line"></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-num">02</div>
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-shield-halved"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+                    <h3>Free Document Pre-Audit</h3>
+                    <p>Expert review catches errors in notary seals and wording <em>before</em> they cause government rejections — saving you time and money.</p>
+                    <div class="card-line"></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-num">03</div>
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-certificate"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+                    <h3>Certified Professionals</h3>
+                    <p>Commissioned Texas Notary &amp; NNA Certified. Staying ahead of state and federal regulations so you don't have to.</p>
+                    <div class="card-line"></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-num">04</div>
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-handshake"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+                    <h3>White-Glove Service</h3>
+                    <p>5+ years serving Austin families, law firms, dental offices, and HR departments with total security and confidentiality.</p>
+                    <div class="card-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-eyebrow">What We Do</p>
+                <h2 class="section-title">Our <em>Services</em></h2>
+                <p class="section-sub">From state apostilles to FBI background checks — expert handling of your most critical documents.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="service-card-inner">
+                        <div class="service-badge">Most Popular</div>
+                        <div class="service-emoji">🏛️</div>
+                        <h3>Texas State Apostille</h3>
+                        <p>Hand-carried to the Texas Secretary of State for birth certs, marriage licenses, business docs, and power of attorney.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 1–2 day standard</li>
+                            <li><i class="fas fa-check"></i> Same-day rush available</li>
+                            <li><i class="fas fa-check"></i> Incl. $15 SOS state fee</li>
+                        </ul>
+                        <div class="service-price-row">
+                            <span class="price-from">Starting at</span>
+                            <span class="price-amount">$100</span>
+                        </div>
+                        <a href="#intake" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-glow-effect"></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="80">
+                    <div class="service-card-inner">
+                        <div class="service-badge badge-federal">Federal</div>
+                        <div class="service-emoji">🌐</div>
+                        <h3>Federal / FBI Apostille</h3>
+                        <p>Expert handling of FBI background checks &amp; federal documents at the U.S. Department of State via Washington D.C.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Handled via D.C.</li>
+                            <li><i class="fas fa-check"></i> Full tracking</li>
+                            <li><i class="fas fa-check"></i> Incl. $20 USDOS fee</li>
+                        </ul>
+                        <div class="service-price-row">
+                            <span class="price-from">Starting at</span>
+                            <span class="price-amount">$150</span>
+                        </div>
+                        <a href="#intake" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-glow-effect"></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="160">
+                    <div class="service-card-inner">
+                        <div class="service-badge badge-mandate">2026 Mandate</div>
+                        <div class="service-emoji">👆</div>
+                        <h3>Mobile Ink-Rolled Fingerprinting</h3>
+                        <p>Professional FD-258 ink-rolled fingerprinting at your home or office. TSBDE compliance for dentists. Zero-smudge archival ink.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> On-site Austin metro</li>
+                            <li><i class="fas fa-check"></i> TSBDE 2026 compliant</li>
+                            <li><i class="fas fa-check"></i> Corporate group rates</li>
+                        </ul>
+                        <div class="service-price-row">
+                            <span class="price-from">Starting at</span>
+                            <span class="price-amount">$150</span>
+                        </div>
+                        <a href="#intake" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-glow-effect"></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="240">
+                    <div class="service-card-inner">
+                        <div class="service-badge badge-mobile">Mobile</div>
+                        <div class="service-emoji">📝</div>
+                        <h3>Mobile Notary Public</h3>
+                        <p>We come to you anywhere in the Austin metro area for real estate closings, legal docs, and corporate filings.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> We come to you</li>
+                            <li><i class="fas fa-check"></i> State-regulated</li>
+                            <li><i class="fas fa-check"></i> + $10/signature</li>
+                        </ul>
+                        <div class="service-price-row">
+                            <span class="price-from">Starting at</span>
+                            <span class="price-amount">$65</span>
+                        </div>
+                        <a href="#intake" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-glow-effect"></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="320">
+                    <div class="service-card-inner">
+                        <div class="service-badge badge-intl">International</div>
+                        <div class="service-emoji">👶</div>
+                        <h3>International Adoption</h3>
+                        <p>Compassionate priority handling of adoption documents. Government rate — capped at $100 per child.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Government rate</li>
+                            <li><i class="fas fa-check"></i> Capped $100/child</li>
+                            <li><i class="fas fa-check"></i> Priority handling</li>
+                        </ul>
+                        <div class="service-price-row">
+                            <span class="price-from">Starting at</span>
+                            <span class="price-amount">$10</span>
+                        </div>
+                        <a href="#intake" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-glow-effect"></div>
+                    </div>
+                </div>
+
+                <div class="service-card service-card-free" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-card-inner">
+                        <div class="service-badge badge-free">FREE</div>
+                        <div class="service-emoji">🔍</div>
+                        <h3>Document Pre-Audit</h3>
+                        <p>Expert review checks notary seals, signatures, and jurisdictional wording to ensure 100% compliance before submission.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Prevents rejections</li>
+                            <li><i class="fas fa-check"></i> Expert review</li>
+                            <li><i class="fas fa-check"></i> Accurate quote</li>
+                        </ul>
+                        <div class="service-price-row">
+                            <span class="price-from"></span>
+                            <span class="price-amount free-price">FREE</span>
+                        </div>
+                        <a href="#intake" class="service-cta service-cta-free">Claim Free Audit <i class="fas fa-arrow-right"></i></a>
+                        <div class="card-glow-effect glow-green"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING TABLE ===== -->
+    <section id="pricing" class="section pricing-section">
+        <div class="pricing-bg"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-eyebrow">Transparent Pricing</p>
+                <h2 class="section-title">2026 <em>Price List</em></h2>
+                <p class="section-sub">All-inclusive — government fees included. No hidden costs. No surprises.</p>
+            </div>
+            <div class="pricing-table-wrap" data-aos="fade-up">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service Category</th>
+                            <th>Starting Fee</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row-animate">
+                            <td><strong>Texas State Apostille</strong></td>
+                            <td class="price-cell">$100.00</td>
+                            <td>Includes $15 SOS fee + 1–2 day hand-carry</td>
+                        </tr>
+                        <tr class="table-row-animate">
+                            <td><strong>Rush TX (Same-Day)</strong></td>
+                            <td class="price-cell">$150.00</td>
+                            <td>Hand-carried to SOS by 10 AM; returned same day</td>
+                        </tr>
+                        <tr class="table-row-animate">
+                            <td><strong>Additional TX Document</strong></td>
+                            <td class="price-cell">$75.00</td>
+                            <td>Discounted rate for multiple docs in one order</td>
+                        </tr>
+                        <tr class="table-row-animate">
+                            <td><strong>Federal / FBI Apostille</strong></td>
+                            <td class="price-cell">$150.00</td>
+                            <td>Includes $20 USDOS fee; handled via Washington D.C.</td>
+                        </tr>
+                        <tr class="table-row-animate">
+                            <td><strong>International Adoption</strong></td>
+                            <td class="price-cell">$10.00</td>
+                            <td>Per document; capped at $100 per child (govt. rate)</td>
+                        </tr>
+                        <tr class="table-row-animate">
+                            <td><strong>Mobile Ink Fingerprinting</strong></td>
+                            <td class="price-cell">$150.00</td>
+                            <td>On-site service fee (incl. travel in Austin metro)</td>
+                        </tr>
+                        <tr class="table-row-animate">
+                            <td><strong>Fingerprint Card Fee</strong></td>
+                            <td class="price-cell">$20.00</td>
+                            <td>Per FD-258 ink-rolled card completed</td>
+                        </tr>
+                        <tr class="table-row-animate">
+                            <td><strong>Mobile Notary (Austin)</strong></td>
+                            <td class="price-cell">$65.00</td>
+                            <td>Travel fee + $10 per state-regulated signature</td>
+                        </tr>
+                        <tr class="table-row-animate table-row-free">
+                            <td><strong>Document Pre-Audit</strong></td>
+                            <td class="price-cell"><span class="free-tag">FREE</span></td>
+                            <td>Expert review to prevent government rejections</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="pricing-note" data-aos="fade-up">
+                <i class="fas fa-info-circle"></i>
+                $50 surcharge applies for travel beyond 15 miles of Central Austin. Corporate group rates available for 3+ fingerprinting sessions — <a href="#intake">contact us</a> for custom quotes.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-left" data-aos="fade-right">
+                    <p class="section-eyebrow">About the Founder</p>
+                    <h2 class="about-title">Meet Your Document<br><em>Authentication Expert</em></h2>
+                    <p class="about-text">
+                        Signature Secure USA was founded with a clear goal: to provide Austin residents and businesses with a reliable, white-glove alternative to the confusing bureaucracy of document authentication. After seeing how difficult it can be for families and professionals to navigate state and federal requirements, we dedicated ourselves to becoming the premier "boots-on-the-ground" expert at the Texas Secretary of State.
+                    </p>
+                    <p class="about-text">
+                        My approach is simple: I treat every birth certificate, FBI background check, and corporate filing as if it were my own. When you work with me, you're getting an advocate in Austin who handles the red tape so you can move forward with confidence.
+                    </p>
+                    <div class="about-values">
+                        <div class="value-card" data-aos="fade-up" data-aos-delay="0">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h4>Integrity</h4>
+                                <p>We handle sensitive identity data with total confidentiality.</p>
+                            </div>
+                        </div>
+                        <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Speed</h4>
+                                <p>Capitol proximity enables the fastest turnaround times in Austin.</p>
+                            </div>
+                        </div>
+                        <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-bullseye"></i>
+                            <div>
+                                <h4>Accuracy</h4>
+                                <p>Pre-Audit catches errors before they cause costly rejections.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-row">
+                        <div class="stat-box" data-count="1">
+                            <span class="stat-num" data-target="1">1</span>
+                            <span class="stat-suffix">-2 Day</span>
+                            <span class="stat-label">Turnaround</span>
+                        </div>
+                        <div class="stat-box" data-count="5">
+                            <span class="stat-num" data-target="5">5</span>
+                            <span class="stat-suffix">+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat-box" data-count="99">
+                            <span class="stat-num" data-target="99">0</span>
+                            <span class="stat-suffix">.9%</span>
+                            <span class="stat-label">Acceptance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right" data-aos="fade-left">
+                    <div class="about-seal-frame">
+                        <div class="frame-ring frame-ring-1"></div>
+                        <div class="frame-ring frame-ring-2"></div>
+                        <img src="/images/austin.jpg" alt="Signature Secure USA Austin Metro" class="about-seal-img">
+                        <div class="seal-badge-wrap">
+                            <img src="/images/partner.jpg" alt="Premier Partner" class="seal-badge-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INTAKE FORM ===== -->
+    <section id="intake" class="section intake-section">
+        <div class="intake-bg-glow"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-eyebrow">Get Started Today</p>
+                <h2 class="section-title">Free Document <em>Pre-Audit</em></h2>
+                <p class="section-sub">Fill out our secure form and we'll review your document within 2 business hours.</p>
+            </div>
+            <div class="intake-wrapper">
+                <div class="intake-banner" data-aos="fade-up">
+                    <i class="fas fa-shield-halved"></i>
+                    <p><strong>Ready to get started?</strong> Submit our secure intake form for a <strong>Free Digital Pre-Audit</strong>. Our experts will review your document's notary seal and wording to ensure it meets all government requirements before we begin.</p>
+                </div>
+                <form id="intakeForm" class="intake-form" enctype="multipart/form-data" data-aos="fade-up">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name (Contact Person)</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            <span class="input-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Professional Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Phone Number (Urgent Questions)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+                            <span class="input-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline"><i class="fas fa-clock"></i> Timeline Needed</label>
+                            <select id="timeline" name="timeline">
+                                <option value="" disabled selected>When do you need docs returned?</option>
+                                <option value="same-day">Same Day (Rush)</option>
+                                <option value="1-2days">1–2 Business Days</option>
+                                <option value="1week">Within 1 Week</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service"><i class="fas fa-list-check"></i> Service Requested</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Texas State Apostille">Texas State Apostille</option>
+                            <option value="Federal / FBI Background Check Authentication">Federal / FBI Background Check Authentication</option>
+                            <option value="Mobile Ink-Rolled Fingerprinting (FD-258)">Mobile Ink-Rolled Fingerprinting (FD-258)</option>
+                            <option value="Mobile Notary Public">Mobile Notary Public</option>
+                            <option value="International Adoption Documents">International Adoption Documents</option>
+                            <option value="Free Document Pre-Audit">Free Document Pre-Audit Only</option>
+                        </select>
+                        <span class="input-line"></span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="docType"><i class="fas fa-file-alt"></i> Type of Document</label>
+                            <select id="docType" name="docType">
+                                <option value="" disabled selected>e.g., Birth Certificate, FBI Check…</option>
+                                <option value="Birth Certificate">Birth Certificate</option>
+                                <option value="Marriage License">Marriage License</option>
+                                <option value="Power of Attorney">Power of Attorney</option>
+                                <option value="FBI Background Check">FBI Background Check</option>
+                                <option value="Corporate / Business Document">Corporate / Business Document</option>
+                                <option value="Adoption Documents">Adoption Documents</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="input-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination"><i class="fas fa-globe"></i> Country of Destination</label>
+                            <input type="text" id="destination" name="destination" placeholder="Where will this be used?">
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="numDocs"><i class="fas fa-copy"></i> Number of Documents</label>
+                        <input type="number" id="numDocs" name="numDocs" placeholder="How many documents?" min="1" value="1">
+                        <span class="input-line"></span>
+                    </div>
+                    <div class="form-group file-group">
+                        <label for="file"><i class="fas fa-upload"></i> Upload Document for Free Pre-Audit</label>
+                        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                        <p class="file-note">Upload a clear photo of the signature/notary page. This enables your Free Pre-Audit and accurate quote.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Additional Notes</label>
+                        <textarea id="message" name="message" placeholder="Anything else we should know?"></textarea>
+                        <span class="input-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-full magnetic">
+                        <span class="btn-bg"></span>
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Submit for Free Pre-Audit</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                </form>
+                <div id="formStatus" class="form-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="/images/partner.jpg" alt="Signature Secure USA" class="footer-logo">
+                    <div class="footer-brand-name">Signature Secure USA</div>
+                    <p>Austin's premier partner for expedited document authentication, hand-carry apostille services, and professional mobile fingerprinting across Texas.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-btn" aria-label="Google"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i>Texas State Apostille</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i>Federal / FBI Apostille</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i>Mobile Fingerprinting</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i>Mobile Notary Public</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i>International Adoption</a></li>
+                        <li><a href="#intake"><i class="fas fa-chevron-right"></i>Free Pre-Audit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#why-us"><i class="fas fa-chevron-right"></i>Why Choose Us</a></li>
+                        <li><a href="#pricing"><i class="fas fa-chevron-right"></i>2026 Pricing</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i>About the Founder</a></li>
+                        <li><a href="#intake"><i class="fas fa-chevron-right"></i>Get Free Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact">
+                        <div class="contact-row"><i class="fas fa-envelope"></i><span>info@signaturesecureusa.com</span></div>
+                        <div class="contact-row"><i class="fas fa-phone"></i><span>[Your Phone Number]</span></div>
+                        <div class="contact-row"><i class="fas fa-map-marker-alt"></i><span>Austin Metro Area, Texas<br>Serving Houston · Dallas · San Antonio<br>El Paso · Waco</span></div>
+                    </div>
+                    <div class="footer-cert-badges">
+                        <span class="cert-badge"><i class="fas fa-certificate"></i> TX Commissioned Notary</span>
+                        <span class="cert-badge"><i class="fas fa-certificate"></i> NNA Certified</span>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-disclaimer">
+                <strong>Disclaimer:</strong> The information provided is for general informational purposes only and is not intended to be a substitute for professional legal advice. Signature Secure USA is a document service and does not provide legal advice. Always verify government requirements for document authentications directly with the issuing agency.
+            </p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Signature Secure USA. All rights reserved. Austin, Texas.</p>
+                <p>Secure · Certified · Expedited</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+</html>
